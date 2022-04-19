@@ -54,6 +54,12 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentName>bearMap</componentName>
+                <identifier>c_bearMap</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
                 <componentName>helloWebComponent</componentName>
                 <identifier>c_helloWebComponent</identifier>
             </componentInstance>
