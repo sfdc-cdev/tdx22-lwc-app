@@ -1,7 +1,8 @@
+import { NavigationMixin } from 'lightning/navigation';
 import { LightningElement, wire } from 'lwc';
 /** BearController.searchBears(searchTerm) Apex method */
 import searchBears from '@salesforce/apex/BearController.searchBears';
-export default class BearList extends LightningElement {
+export default class BearList extends NavigationMixin(LightningElement) {
     searchTerm = '';
     @wire(searchBears, { searchTerm: '$searchTerm' })
     bears;
@@ -18,5 +19,18 @@ export default class BearList extends LightningElement {
     }
     get hasResults() {
         return (this.bears.data.length > 0);
+    }
+    handleBearView(event) {
+        // Get bear record id from bearview event
+        const bearId = event.detail;
+        // Navigate to bear record page
+        this[NavigationMixin.Navigate]({
+            type: 'standard__recordPage',
+            attributes: {
+                recordId: bearId,
+                objectApiName: 'Bear__c',
+                actionName: 'view',
+            },
+        });
     }
 }
