@@ -5,4 +5,7 @@ export default class BearTile extends LightningElement {
     appResources = {
         bearSilhouette: `${ursusResources}/img/standing-bear-silhouette.png`,
     };
+    handleOpenRecordClick() {
+
+    }
 }
