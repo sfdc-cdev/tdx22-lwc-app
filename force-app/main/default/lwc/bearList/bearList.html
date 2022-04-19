@@ -2,9 +2,9 @@
     <lightning-card title="Bears" icon-name="utility:animal_and_nature">
         <div class="slds-card__body_inner">
             <!-- Start bear list -->
-            <template if:true={bears}>
+            <template if:true={bears.data}>
                 <lightning-layout multiple-rows="true" pull-to-boundary="small">
-                    <template for:each={bears} for:item="bear">
+                    <template for:each={bears.data} for:item="bear">
                         <lightning-layout-item
                             key={bear.Id}
                             size="3"
@@ -43,7 +43,7 @@
             </template>
             <!-- End bear list -->
             <!-- Data failed to load -->
-            <template if:true={error}>
+            <template if:true={bears.error}>
                 <div class="slds-text-color_error">
                     An error occurred while loading the bear list
                 </div>
