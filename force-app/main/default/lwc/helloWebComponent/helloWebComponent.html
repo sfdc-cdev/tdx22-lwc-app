@@ -1,7 +1,7 @@
 <template>
-    <lightning-card title="Lightning Web Component" icon-name="custom:custom14">
+    <lightning-card title={capitalizedGreeting} icon-name="custom:custom14">
         <div class="slds-var-m-around_medium">
-            <h2>Hello {greeting}!</h2>
+            <p>Today is {currentDate}</p>
             <lightning-input
                 label="Name"
                 value={greeting}
