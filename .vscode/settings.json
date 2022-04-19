@@ -1,0 +1,7 @@
+{
+    "git-graph.commitDetailsView.autoCenter": true,
+    "git-graph.commitDetailsView.fileView.fileTree.compactFolders": true,
+    "git-graph.commitDetailsView.location": "Docked to Bottom",
+    "git-graph.commitDetailsView.fileView.type": "File Tree",
+    "git-graph.markdown": true
+}
