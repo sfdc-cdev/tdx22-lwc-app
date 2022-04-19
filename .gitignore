@@ -1,0 +1,7 @@
+**/__MACOSX
+**/.DS_Store
+**/jsconfig.json
+.sfdx
+.localdevserver
+node_modules
+testPush*
