@@ -156,6 +156,12 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
+                <componentName>bearSupervisor</componentName>
+                <identifier>c_bearSupervisor</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
                 <componentInstanceProperties>
                     <name>tabs</name>
                     <value>sidebartabs</value>
