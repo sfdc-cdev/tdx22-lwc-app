@@ -3,6 +3,12 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentName>bearList</componentName>
+                <identifier>c_bearList</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
                 <componentName>home:heroChart</componentName>
                 <identifier>home_heroChart</identifier>
             </componentInstance>
